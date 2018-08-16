@@ -18,7 +18,7 @@ public class WebDriverHelper {
 	}
 	
 	public static WebDriver launchApplication(String url, boolean runHeadless) {
-		File chrome = new File("src/test/resources/chromedriver.exe");
+		File chrome = new File("src/test/resources/chromedriver");
 
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("window-size=1200x600");
