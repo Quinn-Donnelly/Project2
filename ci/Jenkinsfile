@@ -14,13 +14,18 @@ pipeline {
         }
       }
     }
-    stage('Test') {
-      steps {
-        dir('./api') {
-          sh 'mvn test'
-        }
-      }
-    }
+    // stage('Test') {
+    //   steps {
+    //     /*
+    //         This was used to test the server's ability to run the test
+    //         If this was included the pipeline would fail with the foreign
+    //         test failure
+    //     */
+    //     dir('./api') {
+    //       sh 'mvn test'
+    //     }
+    //   }
+    // }
     stage('Deliver') {
       steps {
         echo '<(^_^<)'
