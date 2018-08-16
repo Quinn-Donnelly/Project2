@@ -4,6 +4,9 @@ pipeline {
     stage('Build') {
       steps {
         echo '(>^_^)>'
+        dir('./api/src/test/resources') {
+          sh 'chmod u+x chromedriver'
+        }
         sh 'pm2 stop testing-frontend'
         dir('./frontend') {
           sh 'npm install --no-audit'
