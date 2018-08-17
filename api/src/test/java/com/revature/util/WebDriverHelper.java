@@ -20,7 +20,11 @@ public class WebDriverHelper {
 	}
 
 	public static WebDriver launchApplication(String url, boolean runHeadless) {
+<<<<<<< HEAD
 		File chrome = new File(Constants.pathToChromeExecutable);
+=======
+		File chrome = new File("src/test/resources/chromedriver");
+>>>>>>> Linux driver for Selinium added
 
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("window-size=1200x600");
