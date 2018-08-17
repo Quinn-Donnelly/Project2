@@ -1,4 +1,6 @@
-package com.revature.utils;
+package utils;
+import java.io.File;
+
 import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
