@@ -100,4 +100,4 @@ Project Management Tooling is described below
 - Deploying changes to hibernate.cfg.xml requires manual step due to sensitive information in the file
 - [api/src/main/java/com/revature/utils/Constants.java](api/src/main/java/com/revature/utils/Constants.java) is used to store file paths and other system dependant information
 - The node server also have system dependant constants found at file below
-- [frontend\server\constants.js](frontend\server\constants.js)
+- [frontend/server/constants.js](frontend/server/constants.js)
