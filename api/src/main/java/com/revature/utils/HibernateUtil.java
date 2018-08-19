@@ -19,10 +19,14 @@ public class HibernateUtil {
         if (mysession == null) {
 	    log.info("Creating a Session");
 <<<<<<< HEAD
+<<<<<<< HEAD
             String hibernatePropsFilePath = Constants.hibernateConfigPath;
 =======
             String hibernatePropsFilePath = "/hibernate.cfg.xml";
 >>>>>>> Server Configurations for Producation
+=======
+            String hibernatePropsFilePath = Constants.hibernateConfigPath;
+>>>>>>> Added the Constants file for defining system dependant information
             File hibernatePropsFile = new File(hibernatePropsFilePath);
             Configuration configuration = new Configuration();
             mysession = configuration.configure(hibernatePropsFile).buildSessionFactory();
