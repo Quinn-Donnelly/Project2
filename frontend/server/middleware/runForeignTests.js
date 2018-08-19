@@ -9,7 +9,11 @@ const { pathToTestOutputXML, mavenTestCommand } = require('../constants');
 module.exports = function testFunction() {
     return new Promise(async (resolve, reject) => {
         try {
+<<<<<<< HEAD
             await runCommand(mavenTestCommand);
+=======
+            await runCommand("/usr/apache/apache-maven-3.5.4/bin/mvn test");
+>>>>>>> Server Configurations for Producation
         } catch (err) {
             // ! this silences all errors therefore if a path is incorrect it will not report
             // TODO: Implement dev mode checking to report error in dev mode
